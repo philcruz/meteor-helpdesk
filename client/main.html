@@ -1,14 +1,15 @@
 <head>
-  <title>meteor-helpdesk</title>
+<title>HelpDesk</title>
 </head>
-
 <body>
-  <h1>Welcome to Meteor!</h1>
-
-  {{> hello}}
+<div class="container">
+<header class="navbar navbar-default" role="navigation">
+<div class="navbar-header">
+<a class="navbar-brand" href="/">HelpDesk</a>
+</div>
+</header>
+<div id="main">
+{{> casesList}}
+</div>
+</div>
 </body>
-
-<template name="hello">
-  <button>Click Me</button>
-  <p>You've pressed the button {{counter}} times.</p>
-</template>
