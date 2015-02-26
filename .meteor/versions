@@ -10,6 +10,7 @@ callback-hook@1.0.2
 check@1.0.4
 ddp@1.0.14
 deps@1.0.6
+differential:vulcanize@0.0.3
 ecwyne:polymer@1.0.3
 ecwyne:polymer-elements@1.0.4
 ejson@1.0.5

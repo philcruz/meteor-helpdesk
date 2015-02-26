@@ -1,6 +1,29 @@
 <head>
-<title>HelpDesk</title>
+    <title>HelpDesk</title>
 </head>
+<body>
+<core-scaffold id="core_scaffold">
+  <core-header-panel mode="seamed" id="core_header_panel" navigation flex>
+    <core-toolbar id="core_toolbar">
+    </core-toolbar>
+    <core-menu valueattr="label" id="core_menu" theme="core-light-theme">
+      <core-item id="core_item" icon="settings" label="Item1" horizontal center layout active></core-item>
+      <core-item id="core_item1" icon="settings" label="Item2" horizontal center layout></core-item>
+    </core-menu>
+  </core-header-panel>
+  <div id="div" tool>HelpDesk
+  </div>
+   <core-pages selected="0" selectedindex="0" notap id="core_pages">
+    <section id="section" active>
+        {{> casesList}}
+    </section>
+    <section id="section1">Page Two</section>
+  </core-pages>
+
+</core-scaffold>
+</body>
+
+<template name="temp">
 <body>
 <div class="container">
 <header class="navbar navbar-default" role="navigation">
@@ -13,3 +36,4 @@
 </div>
 </div>
 </body>
+</template>
