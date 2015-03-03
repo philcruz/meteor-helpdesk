@@ -1,3 +1,20 @@
+
+#navheader {
+    background: url(/images/sunset-background.jpg) top left no-repeat;
+}
+
+#navheader .name {
+    color: #fff;
+    font-weight: 500;
+    text-shadow: 1px 1px 2px #000;
+}
+
+#navheader  .email {
+    color: #fff;
+    font-weight: 100;
+    font-size: 0.9em ;
+}
+
 .grid-block, .main, .post, .comments li, .comment-form {
     background: #fff;
     border-radius: 3px;
