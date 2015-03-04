@@ -15,6 +15,33 @@
     font-size: 0.9em ;
 }
 
+.case .case-content {
+    float: left;
+    background: #fff;
+    padding: 10px;
+    color: black;
+}
+.case .case-content h3 {
+    margin: 0;
+    line-height: 1.4;
+    font-size: 18px;
+}
+.case .case-content h3 a {
+    display: inline-block;
+    margin-right: 5px;
+    color: black;
+}
+.case .question {
+    color: darkgrey;
+}
+.truncate {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 90%
+}
+
+
 .grid-block, .main, .post, .comments li, .comment-form {
     background: #fff;
     border-radius: 3px;
