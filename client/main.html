@@ -1,45 +1,5 @@
 <head>
     <title>HelpDesk</title>
 </head>
-<body>
-<core-scaffold id="core_scaffold">
-  <core-header-panel mode="seamed" id="core_header_panel" navigation flex>
-    <core-toolbar id="navheader" class="medium-tall">
-        <div class="bottom" layout vertical>
-        <span class="name">John Doe</span>
-        <span class="email">john.doe@gmail.com</span>
-        </div>
-    </core-toolbar>    
-      <core-menu valueattr="label" id="core_menu" theme="core-light-theme">
-        <core-item id="core_item1" icon="label" label="My Cases" horizontal center layout active></core-item>
-        <core-item id="core_item2" icon="label" label="All Cases" horizontal center layout></core-item>
-        <core-item id="core_item3" icon="settings" label="Settings" horizontal center layout></core-item>
-        <core-item id="core_item4" icon="info" label="About" horizontal center layout></core-item>
-    </core-menu>
-  </core-header-panel>
-    
-  <div id="div" tool>HelpDesk
-  </div>  
-   <core-pages selected="0" selectedindex="0" notap id="core_pages">     
-    <section id="section1" active>
-        {{> casesList}}
-    </section>
-    <section id="section2">Page Two</section>
-  </core-pages>
-</core-scaffold>
-</body>
 
-<template name="temp">
-<body>
-<div class="container">
-<header class="navbar navbar-default" role="navigation">
-<div class="navbar-header">
-<a class="navbar-brand" href="/">HelpDesk</a>
-</div>
-</header>
-<div id="main">
-{{> casesList}}
-</div>
-</div>
-</body>
-</template>
+
