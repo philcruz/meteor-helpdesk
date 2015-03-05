@@ -1,3 +1,14 @@
+html, body {
+  height: 100%;
+  margin: 0;
+}
+core-header-panel {
+  height: 100%;
+}
+core-toolbar {
+    background-color: #526E9C;
+    color: #fff;
+}
 
 #navheader {
     background: url(/images/sunset-background.jpg) top left no-repeat;
@@ -15,6 +26,9 @@
     font-size: 0.9em ;
 }
 
+.default-content{
+    padding: 10px;
+}
 .case .case-content {
     float: left;
     background: #fff;
@@ -40,7 +54,6 @@
     text-overflow: ellipsis;
     width: 90%
 }
-
 
 .grid-block, .main, .post, .comments li, .comment-form {
     background: #fff;
