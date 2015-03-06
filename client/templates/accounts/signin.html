@@ -1,0 +1,47 @@
+<template name="signin">
+    
+<style shim-shadowdom>
+paper-button {
+    padding:0;
+}
+paper-button::shadow .button-content {
+    padding:0;
+}
+paper-button button {
+        padding:1em;
+background-color: transparent;
+    border-color: transparent;
+}
+paper-button button::-moz-focus-inner {
+    border: 0;
+}
+</style>
+<div class="entry" fit layout vertical center center-justified slide-from-right>
+    <div class="entry-body">
+
+    {{#if currentUser}}
+        <p>You're already logged in.</p>
+    {{else}}
+       
+   
+    <form id="signin">
+
+        <paper-input-decorator label="Email Address" error="We need a valid email!"
+          floatingLabel class="input-light">
+          <input is="core-input" id="email" type="email" required>
+        </paper-input-decorator>
+
+        <paper-input-decorator label="Password" error="You need a password!"
+          floatingLabel class="input-light">
+          <input is="core-input" id="password" type="password" required>
+        </paper-input-decorator>
+
+        <div horizontal layout reverse>
+          <paper-button id="signin-button" class="btn btn-accent colored" type="submit" raised><button  type="submit" value="submit" >Sign In</button></paper-button>
+        </div>                  
+
+      </form>
+    {{/if}}  
+    </div>
+  </div>
+</template>
