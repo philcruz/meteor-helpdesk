@@ -10,6 +10,11 @@ core-toolbar {
     color: #fff;
 }
 
+paper-button[raised].colored {
+    background: #4285f4;
+    color: #fff;
+}
+
 #navheader {
     background: url(/images/sunset-background.jpg) top left no-repeat;
 }
