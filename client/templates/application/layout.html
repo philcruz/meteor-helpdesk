@@ -10,9 +10,11 @@
       <core-menu valueattr="label" id="core_menu" theme="core-light-theme">
         <core-item id="core_item1" icon="label" label="My Cases" horizontal center layout active></core-item>
         <core-item id="core_item2" icon="label" label="All Cases" horizontal center layout></core-item>
-        <core-item id="core_item3" icon="settings" label="Settings" horizontal center layout></core-item>
+        <core-item id="core_item3" icon="settings" label="Settings" horizontal center layout>
+            <a href="{{pathFor 'settings'}}"></a>
+        </core-item>
         <core-item id="core_item4" icon="info" label="About" horizontal center layout>
-        <a href="/about"></a>
+            <a href="/about"></a>
         </core-item>
     </core-menu>
   </core-header-panel>

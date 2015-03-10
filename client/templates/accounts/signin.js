@@ -6,5 +6,6 @@ Template.signin.events({
         console.log("Form submitted.");
         event.preventDefault();
         Meteor.loginWithPassword(emailVar, passwordVar);
+        Router.go('casesList');
     }
 });

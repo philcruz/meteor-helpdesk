@@ -5,9 +5,17 @@ Template.signup.events({
         console.log("email: " + emailVar);
         console.log("Form submitted.");
         event.preventDefault();
-        Accounts.createUser({
+        var newUser = Accounts.createUser({
             email: emailVar,
             password: passwordVar
-        });
+            },
+            function (error){
+                if (error) 
+                    console.log(error);
+                else
+                    console.log('no problem...');
+            }                                          
+        );
+        console.log(newUser);
     }
 });
