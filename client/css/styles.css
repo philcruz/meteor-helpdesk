@@ -15,6 +15,13 @@ paper-button[raised].colored {
     color: #fff;
 }
 
+paper-fab {
+    -webkit-transform: translateZ(0); /*http://stackoverflow.com/questions/20503424/positionfixed-not-working-in-google-chrome*/
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+}
+
 #navheader {
     background: url(/images/sunset-background.jpg) top left no-repeat;
 }
