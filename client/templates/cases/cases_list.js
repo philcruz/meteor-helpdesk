@@ -5,5 +5,8 @@ Template.casesList.helpers({
 });
 
 Template.layout.events({
-    'click #new-case-button': function(){console.log('new buton clicked!');}
+    'click #new-case-button': function(){
+        console.log('new button clicked!');
+        Router.go('newcase');
+    }
 });

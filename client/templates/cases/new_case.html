@@ -1,0 +1,20 @@
+<template name="newcase">
+       
+<core-header-panel flex style="background-color:white;">
+    <core-toolbar>
+        <core-icon-button id="cancel-button" icon="close" ></core-icon-button>
+        <div flex>New Case</div>
+        <core-icon-button id="done-button" icon="done" end ></core-icon-button>
+    </core-toolbar>
+    <div class="default-content" flex layout >
+        <div flex layout >
+            <paper-input label="Title" flex></paper-input>
+        </div>
+        <div>
+            <paper-autogrow-textarea id="contentArea" flex>
+                <textarea id="question" placeholder="Type your question here..."></textarea>
+            </paper-autogrow-textarea>
+        </div>
+    </div>
+</core-header-panel>
+</template>

@@ -16,10 +16,17 @@ paper-button[raised].colored {
 }
 
 paper-fab {
-    -webkit-transform: translateZ(0); /*http://stackoverflow.com/questions/20503424/positionfixed-not-working-in-google-chrome*/
-    position: absolute;
+    position: fixed;
     right: 20px;
     bottom: 20px;
+}
+
+paper-input {
+    width: 100%;
+}
+
+paper-autogrow-textarea {
+    width: 100%;
 }
 
 #navheader {
