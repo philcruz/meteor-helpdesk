@@ -8,8 +8,7 @@ paper-button::shadow .button-content {
     padding:0;
 }
 paper-button button {
-        padding:1em;
-background-color: transparent;
+    background-color: transparent;
     border-color: transparent;
 }
 paper-button button::-moz-focus-inner {
@@ -26,7 +25,7 @@ paper-button button::-moz-focus-inner {
    
     <form id="signin">
 
-        <paper-input-decorator label="Email Address" error="We need a valid email!"
+        <paper-input-decorator label="Email" error="We need a valid email!"
           floatingLabel class="input-light">
           <input is="core-input" id="email" type="email" required>
         </paper-input-decorator>
@@ -37,7 +36,7 @@ paper-button button::-moz-focus-inner {
         </paper-input-decorator>
 
         <div horizontal layout reverse>
-          <paper-button id="signin-button" class="btn btn-accent colored" type="submit" raised><button  type="submit" value="submit" >Sign In</button></paper-button>
+          <paper-button id="signin-button" class="btn colored" raised><button  type="submit" value="submit" >Sign In</button></paper-button>
         </div>                  
 
       </form>
