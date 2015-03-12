@@ -1,21 +1,18 @@
 Template.signup.events({
     'submit #signup': function(event,template){
-        var emailVar = template.find('#email').value;
-        var passwordVar = template.find('#password').value;
-        console.log("email: " + emailVar);
-        console.log("Form submitted.");
+        var email = template.find('#email').value;
+        var password = template.find('#password').value;
         event.preventDefault();
         var newUser = Accounts.createUser({
-            email: emailVar,
-            password: passwordVar
+                email: email,
+                password: password
             },
             function (error){
                 if (error) 
-                    console.log(error);
+                    document.querySelector('#signupToast').show();
                 else
-                    console.log('no problem...');
+                    Router.go('casesList');
             }                                          
-        );
-        console.log(newUser);
+        );        
     }
 });
