@@ -1,11 +1,17 @@
+function loginCallBack(error){
+    if( ! error ){
+        Router.go('casesList');
+    } else {
+        //$('#signinToast').show(); //doesn't work, because of shadow DOM?
+        document.querySelector('#signinToast').show();
+    }
+}
+
 Template.signin.events({
     'submit #signin': function(event,template){
-        var emailVar = template.find('#email').value;
-        var passwordVar = template.find('#password').value;
-        console.log("email: " + emailVar);
-        console.log("Form submitted.");
+        var email = template.find('#email').value;
+        var password = template.find('#password').value;
         event.preventDefault();
-        Meteor.loginWithPassword(emailVar, passwordVar);
-        Router.go('casesList');
+        Meteor.loginWithPassword(email, password, loginCallBack);        
     }
 });
