@@ -1,0 +1,12 @@
+<template name="accountLayout">
+<core-header-panel flex>
+    <core-toolbar>        
+        {{title}}
+    </core-toolbar>
+    <div class="default-content">
+         {{> yield}}
+    </div>
+    <paper-toast id="signinToast" text="The email/password did not match."></paper-toast>
+    <paper-toast id="signupToast" text="The email already exists."></paper-toast>
+</core-header-panel>
+</template>

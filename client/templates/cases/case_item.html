@@ -1,10 +1,12 @@
 <template name="caseItem">
-<div class="case">
-    <div class="case-content">
-        <h3><a href="{{url}}">{{title}}</a><span>{{domain}}</span></h3>
-        {{fromName}}
-        <br />
-        {{question}}
-    </div>
-</div>
+<swipeable-card>
+<case-card>
+    <!--    <img width="50" height="50" src="/images/avatar-01.svg" />-->
+    <h3>{{title}}</h3>
+    {{fromName}}
+    <br />
+    <span class="question truncate">{{question}}</span>   
+    <input name="id" type="hidden" value="{{_id}}" >
+</case-card>
+</swipeable-card>
 </template>

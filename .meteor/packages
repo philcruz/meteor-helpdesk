@@ -5,7 +5,12 @@
 # but you can also edit it by hand.
 
 meteor-platform
-autopublish
 insecure
 twbs:bootstrap
 underscore
+ecwyne:polymer
+ecwyne:polymer-elements
+differential:vulcanize
+iron:router
+accounts-password
+msavin:mongol

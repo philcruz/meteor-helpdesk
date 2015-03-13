@@ -1,3 +1,79 @@
+html, body {
+  height: 100%;
+  margin: 0;
+}
+core-header-panel {
+  height: 100%;
+}
+core-toolbar {
+    background-color: #526E9C;
+    color: #fff;
+}
+
+paper-button[raised].colored {
+    background: #4285f4;
+    color: #fff;
+}
+
+paper-fab {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+}
+
+paper-input {
+    width: 100%;
+}
+
+paper-autogrow-textarea {
+    width: 100%;
+}
+
+#navheader {
+    background: url(/images/sunset-background.jpg) top left no-repeat;
+}
+
+#navheader .name {
+    color: #fff;
+    font-weight: 500;
+    text-shadow: 1px 1px 2px #000;
+}
+
+#navheader  .email {
+    color: #fff;
+    font-weight: 100;
+    font-size: 0.9em ;
+}
+
+.default-content{
+    padding: 10px;
+}
+.case .case-content {
+    float: left;
+    background: #fff;
+    padding: 10px;
+    color: black;
+}
+.case .case-content h3 {
+    margin: 0;
+    line-height: 1.4;
+    font-size: 18px;
+}
+.case .case-content h3 a {
+    display: inline-block;
+    margin-right: 5px;
+    color: black;
+}
+.case .question {
+    color: darkgrey;
+}
+.truncate {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 90%
+}
+
 .grid-block, .main, .post, .comments li, .comment-form {
     background: #fff;
     border-radius: 3px;

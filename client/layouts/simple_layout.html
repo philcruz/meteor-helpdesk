@@ -1,0 +1,11 @@
+<template name="simpleLayout">
+<core-header-panel flex>
+    <core-toolbar>
+        <core-icon-button id="back-button" icon="arrow-back" ></core-icon-button>
+        About
+    </core-toolbar>
+    <div class="default-content">
+         {{> yield}}
+    </div>
+</core-header-panel>
+</template>
