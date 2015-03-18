@@ -10,6 +10,7 @@ Template.caseItem.events({
     'click swipeable-card': function(e){
         //alert('clicked swipeable-card');
         var id = $(e.target).find('[name=id]').val();
-        console.log(id);        
+        console.log(id);
+        Router.go('viewcase', {_id:id});
     }
 });

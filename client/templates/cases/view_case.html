@@ -1,20 +1,18 @@
-<template name="newcase">
+<template name="viewcase">
        
 <core-header-panel flex style="background-color:white;">
     <core-toolbar>
         <core-icon-button id="cancel-button" icon="close" ></core-icon-button>
-        <div flex>New Case</div>
+        <div flex>Case [{{_id}}]</div>
         <core-icon-button id="save-button" icon="done" end ></core-icon-button>
     </core-toolbar>
     <div class="default-content" flex layout >
         <form id="newform">
         <paper-input-decorator label="Title">
-            <input name="title" is="core-input">
+            <input name="title" is="core-input" value="{{title}}">
         </paper-input-decorator>
         <div>
-            <paper-autogrow-textarea id="contentArea" flex>
-                <textarea name="question" placeholder="Type your question here..."></textarea>
-            </paper-autogrow-textarea>
+            {{question}}
         </div><button type="submit" name="submit-btn"></button>
         </form>
     </div>
