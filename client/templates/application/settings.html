@@ -1,13 +1,10 @@
-<template name="settings">
-       
-<core-header-panel flex>
-    <core-toolbar>
-        <core-icon-button id="back-button" icon="arrow-back" ></core-icon-button>
-        Settings
-    </core-toolbar>
-    <div class="default-content">
-        <paper-button id="email" flex vertical layout start>{{currentUserEmail}}</paper-button>
-        <paper-button id="sign-out-button" flex start-justified vertical layout start>Sign out</paper-button>
-    </div>
-</core-header-panel>
+<template name="settings">    
+<core-toolbar>
+    <core-icon-button id="back-button" icon="arrow-back" ></core-icon-button>
+    Settings
+</core-toolbar>
+<div class="default-content">
+    <paper-button id="email" flex vertical layout start>{{currentUserEmail}}</paper-button>
+    <paper-button id="sign-out-button" flex start-justified vertical layout start>Sign out</paper-button>
+</div>
 </template>
