@@ -8,13 +8,5 @@ Template.settings.events({
         Router.go('signin');
     }
 });
-
-Template.settings.helpers({
-    currentUserEmail: function (){
-        var user = Meteor.user();
-        if (user && user.emails)
-            return user.emails[0].address;
-    }
-});    
     
    
