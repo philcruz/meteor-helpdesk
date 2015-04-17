@@ -3,11 +3,14 @@ function newCaseFromForm(form){
     var question = $(form).find('[name=question]').val();
     var fromName = "John Doe";
     var fromEmail = "john.doe@gmail.com";
-    return {title: title, question: question, fromName: fromName, fromEmail: fromEmail};
+    var assignedTo = document.querySelector('#assignedTo').selectedItemLabel;
+    return {title: title, question: question, fromName: fromName, fromEmail: fromEmail, assignedTo: assignedTo};
 }
 
 Template.newcase.events({
     'click #cancel-button': function(){
+        var selectedItem = document.querySelector('#assignedTo').selectedItemLabel;        
+        //console.log(selectedItem);
         Router.go('casesList');
     },
     

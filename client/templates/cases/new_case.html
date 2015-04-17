@@ -11,6 +11,16 @@
         <paper-input-decorator label="Title">
             <input name="title" is="core-input">
         </paper-input-decorator>
+        <paper-dropdown-menu id="assignedTo" label="Assigned To" >
+            <paper-dropdown class="dropdown" >
+            <core-menu class="menu" >
+                <paper-item >john.doe@gmail.com</paper-item>
+                <paper-item >jane.smith@gmail.com</paper-item>
+                <paper-item >phil@philcruz.com</paper-item>
+                <paper-item >test@test.com</paper-item>
+            </core-menu>
+        </paper-dropdown>
+</paper-dropdown-menu>
         <div>
             <paper-autogrow-textarea id="contentArea" flex>
                 <textarea name="question" placeholder="Type your question here..."></textarea>
