@@ -4,12 +4,23 @@ Template.viewcase.events({
     },
     
     'click #save-button': function(event){
-        console.log('clicked done...');
+        console.log('clicked to save case...');
         console.log(event);
-        var form = $.find('#newform');
+        var form = $.find('#caseform');
         //console.log(form);
-        var newCase = newCaseFromForm(form);
-        newCase._id = Cases.insert(newCase);    
+        //var newCase = newCaseFromForm(form);
+        //newCase._id = Cases.insert(newCase);    
+        //Router.go('casesList');
+        
+        
+        var caseID = this._id;
+        var caseProperties = {            
+            title: $(form).find('[name=title]').val(),
+            question: $(form).find('[name=question]').val(),
+            assignedTo: document.querySelector('#assignedTo').selectedItemLabel
+        };
+        
+        Cases.update( caseID, {$set: caseProperties}, function (error){} );
         Router.go('casesList');
     },
     

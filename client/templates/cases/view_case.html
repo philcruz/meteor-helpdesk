@@ -7,10 +7,20 @@
         <core-icon-button id="save-button" icon="done" end ></core-icon-button>
     </core-toolbar>
     <div class="default-content" flex layout >
-        <form id="newform">
+        <form id="caseform">
         <paper-input-decorator label="Title">
             <input name="title" is="core-input" value="{{title}}">
         </paper-input-decorator>
+        <paper-dropdown-menu id="assignedTo" label="Assigned To" >
+            <paper-dropdown class="dropdown" >
+            <core-menu class="menu" selected="{{assignedTo}}" valueattr="value">
+                <paper-item value="john.doe@gmail.com" >john.doe@gmail.com</paper-item>
+                <paper-item value="jane.smith@gmail.com" >jane.smith@gmail.com</paper-item>
+                <paper-item value="phil@philcruz.com" >phil@philcruz.com</paper-item>
+                <paper-item value="test@test.com" >test@test.com</paper-item>
+            </core-menu>
+            </paper-dropdown>
+        </paper-dropdown-menu>
         <div>
             {{question}}
         </div><button type="submit" name="submit-btn"></button>
