@@ -1,7 +1,16 @@
 
 
 Template.casesList.helpers({
-    cases: function (){return Cases.find();}
+    
+    cases: function (){
+        var controller = Iron.controller();
+        var assignedTo = controller.getParams().query.assignedTo;
+        if (assignedTo)
+            return Cases.find({assignedTo:assignedTo});
+        else
+            return Cases.find();
+    }
+    
 });
 
 Template.layout.events({
