@@ -17,6 +17,7 @@ Template.viewcase.events({
         var caseProperties = {            
             title: $(form).find('[name=title]').val(),
             question: $(form).find('[name=question]').val(),
+            answer: $(form).find('[name=answer]').val(),
             assignedTo: document.querySelector('#assignedTo').selectedItemLabel
         };
         

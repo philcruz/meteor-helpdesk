@@ -23,7 +23,13 @@
         </paper-dropdown-menu>
         <div>
             {{question}}
-        </div><button type="submit" name="submit-btn"></button>
+        </div>
+        <div>
+            <paper-autogrow-textarea id="answer" flex>
+                <textarea name="answer" placeholder="Reply...">{{answer}}</textarea>
+            </paper-autogrow-textarea>
+        </div>
+            <button type="submit" name="submit-btn"></button>
         </form>
     </div>
 </core-header-panel>
