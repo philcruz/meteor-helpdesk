@@ -5,6 +5,7 @@
         <core-icon-button id="cancel-button" icon="close" ></core-icon-button>
         <div flex>Case [{{_id}}]</div>
         <core-icon-button id="save-button" icon="done" end ></core-icon-button>
+        <core-icon-button id="send-button" icon="send" end ></core-icon-button>
     </core-toolbar>
     <div class="default-content" flex layout >
         <form id="caseform">
@@ -21,8 +22,10 @@
             </core-menu>
             </paper-dropdown>
         </paper-dropdown-menu>
-        <div>
-            {{question}}
+        <div>            
+            <paper-autogrow-textarea id="question" flex>
+                <textarea name="question" >{{question}}</textarea>
+            </paper-autogrow-textarea>
         </div>
         <div>
             <paper-autogrow-textarea id="answer" flex>

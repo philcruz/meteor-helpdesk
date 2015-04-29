@@ -1,0 +1,4 @@
+{
+    "mailUrl":      "smtp://USERNAME:PASSWORD@smtp.sendgrid.net:587",
+    "fromEmail":    "do-not-reply@mydomain.com"
+}
