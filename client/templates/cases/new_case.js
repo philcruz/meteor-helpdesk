@@ -4,7 +4,8 @@ function newCaseFromForm(form){
     var question = $(form).find('[name=question]').val();
     var fromName = "";
     var assignedTo = document.querySelector('#assignedTo').selectedItemLabel;
-    return {title: title, question: question, fromName: fromName, fromEmail: fromEmail, assignedTo: assignedTo};
+    var dateCreated = new Date();
+    return {title: title, question: question, fromName: fromName, fromEmail: fromEmail, assignedTo: assignedTo, dateCreated: dateCreated};
 }
 
 Template.newcase.events({

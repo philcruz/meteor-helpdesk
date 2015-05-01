@@ -14,3 +14,13 @@ Template.caseItem.events({
         Router.go('viewcase', {_id:id});
     }
 });
+
+
+Template.caseItem.helpers({
+    dateCreatedFromNow: function() { 
+        if (this.dateCreated)
+            return moment(this.dateCreated).fromNow();
+        else
+            return "a while ago";
+    }
+});

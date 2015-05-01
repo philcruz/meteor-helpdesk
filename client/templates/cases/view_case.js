@@ -14,7 +14,6 @@ Template.viewcase.events({
     },
     
     'click #save-button': function(event){
-        console.log('clicked to save case...');        
         
         var form = $.find('#caseform');
         var caseID = this._id;        
@@ -24,13 +23,13 @@ Template.viewcase.events({
         Router.go('casesList');
     },
     
-    'click #send-button': function(event){   
-        console.log("clicked send button...");
-        
+    'click #send-button': function(event){
         //update the case
         var form = $.find('#caseform');
         var caseID = this._id;        
         var thisCase = caseFromForm(form);
+        thisCase.answeredBy = getCurrentUserEmail();
+        thisCase.dateAnswered = new Date();
         Cases.update( caseID, {$set: thisCase}, function (error){} );  
         
         //send the email

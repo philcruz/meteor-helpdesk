@@ -15,3 +15,4 @@ iron:router
 accounts-password
 msavin:mongol
 email
+momentjs:moment
