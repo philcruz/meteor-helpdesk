@@ -3,7 +3,7 @@
 <case-card>
     <!--    <img width="50" height="50" src="/images/avatar-01.svg" />-->
     <h3>{{title}}</h3>
-    {{fromName}}
+    {{#if fromName}}{{fromName}}{{else}}{{fromEmail}}{{/if}}
     <br />
     <span class="question truncate">{{question}}</span>   
     <input name="id" type="hidden" value="{{_id}}" >

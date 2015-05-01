@@ -9,7 +9,10 @@
     </core-toolbar>
     <div class="default-content" flex layout >
         <form id="caseform">
-        <paper-input-decorator label="Title">
+        <paper-input-decorator label="From" autoValidate>
+            <input name="fromEmail" value="{{fromEmail}}" is="core-input" type="email" required>
+        </paper-input-decorator>
+        <paper-input-decorator label="Subject">
             <input name="title" is="core-input" value="{{title}}">
         </paper-input-decorator>
         <paper-dropdown-menu id="assignedTo" label="Assigned To" >

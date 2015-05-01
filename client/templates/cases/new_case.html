@@ -8,8 +8,11 @@
     </core-toolbar>
     <div class="default-content" flex layout >
         <form id="newform">
-        <paper-input-decorator label="Title">
-            <input name="title" is="core-input">
+        <paper-input-decorator label="From" autoValidate>
+            <input name="fromEmail" is="core-input" type="email" required>
+        </paper-input-decorator>
+        <paper-input-decorator label="Subject">
+            <input name="title" is="core-input" required>
         </paper-input-decorator>
         <paper-dropdown-menu id="assignedTo" label="Assigned To" >
             <paper-dropdown class="dropdown" >
@@ -23,7 +26,7 @@
 </paper-dropdown-menu>
         <div>
             <paper-autogrow-textarea id="contentArea" flex>
-                <textarea name="question" placeholder="Type your question here..."></textarea>
+                <textarea name="question" placeholder="Type your question here..." required></textarea>
             </paper-autogrow-textarea>
         </div><button type="submit" name="submit-btn"></button>
         </form>

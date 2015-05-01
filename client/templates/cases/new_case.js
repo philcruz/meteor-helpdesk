@@ -1,8 +1,8 @@
 function newCaseFromForm(form){
+    var fromEmail = $(form).find('[name=fromEmail]').val();
     var title = $(form).find('[name=title]').val();
     var question = $(form).find('[name=question]').val();
-    var fromName = "John Doe";
-    var fromEmail = "john.doe@gmail.com";
+    var fromName = "";
     var assignedTo = document.querySelector('#assignedTo').selectedItemLabel;
     return {title: title, question: question, fromName: fromName, fromEmail: fromEmail, assignedTo: assignedTo};
 }

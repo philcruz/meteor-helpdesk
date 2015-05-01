@@ -1,9 +1,10 @@
 function caseFromForm(form){
+    var fromEmail = $(form).find('[name=fromEmail]').val();
     var title = $(form).find('[name=title]').val();
     var question = $(form).find('[name=question]').val();
     var answer = $(form).find('[name=answer]').val();    
     var assignedTo = document.querySelector('#assignedTo').selectedItemLabel;
-    return {title: title, question: question, answer: answer, assignedTo: assignedTo};
+    return {fromEmail: fromEmail, title: title, question: question, answer: answer, assignedTo: assignedTo};
 }
 
 
@@ -18,12 +19,7 @@ Template.viewcase.events({
         var form = $.find('#caseform');
         var caseID = this._id;        
         var thisCase = caseFromForm(form);
-        //var thisCase = {            
-        //    title: $(form).find('[name=title]').val(),
-        //    question: $(form).find('[name=question]').val(),
-        //    answer: $(form).find('[name=answer]').val(),
-        //    assignedTo: document.querySelector('#assignedTo').selectedItemLabel
-        //};
+        console.log(thisCase);
         Cases.update( caseID, {$set: thisCase}, function (error){} );        
         Router.go('casesList');
     },
