@@ -11,4 +11,4 @@ sendEmail = function (subject, text) {
     subject: subject,
     text: text
   });
-}
+};

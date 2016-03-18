@@ -24,7 +24,10 @@ paper-button button::-moz-focus-inner {
        
    
     <form id="signup">
-
+        <paper-input-decorator label="Name" error="Please Enter your Name"
+           floatingLabel class="input-light">
+            <input is="core-input" id="name" type="text" required>
+        </paper-input-decorator>
         <paper-input-decorator label="Email" error="We need a valid email!"
           floatingLabel class="input-light">
           <input is="core-input" id="email" type="email" required>
